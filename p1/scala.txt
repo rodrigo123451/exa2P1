@@ -1,0 +1,21 @@
+def suma(x :Int, y:Int):Int=x+y
+def resta(x :Int, y:Int):Int=x-y
+def multi(x:Int, y:Int):Int=x*y
+def div(x :Int, y:Int):Int=x/y
+
+def calcu(x:Int, y:Int, operacion:String):Int={
+  operacion match {
+    case "suma"=>suma(x,y)
+    case "resta"=>resta(x,y)
+    case "multi"=>multi(x,y)
+    case "div"=>div(x,y)
+  }
+}
+
+
+// compilacion
+
+val ejemplo=calcu(2,4,"suma")
+val ejemplo=calcu(2,4,"resta")
+val ejemplo=calcu(2,4,"multi")
+val ejemplo=calcu(2,4,"div")
